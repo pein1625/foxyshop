@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /><span>Foxy Jewellery</span></a>
+                            <div class="header__elements">
+                                <div class="h-drodown"><a class="h-dropdown__toggle header__btn" href="#!"><img src="./images/icon-heart-o.png" alt="" /></a>
+                                    <div class="h-dropdown__menu">
+                                        <div class="h-dropdown__label">Sản phẩm yêu thích</div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div><a class="product-2__link" href="#!">Bỏ yêu thích</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div><a class="product-2__link" href="#!">Bỏ yêu thích</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div><a class="product-2__link" href="#!">Bỏ yêu thích</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div><a class="product-2__link" href="#!">Bỏ yêu thích</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle header__btn" href="#!"><img src="./images/icon-shopping-cart.png" alt="" /><span>0</span></a>
+                                    <div class="h-dropdown__menu">
+                                        <div class="h-dropdown__label">Giỏ hàng</div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-2 media"><a class="product-2__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                            <div class="media-body">
+                                                <div class="product-2__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></div>
+                                                <div class="product-2__price">400.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__elements header__elements--right"><a class="header__btn header__btn--search js-search-toggle" href="#!"><img src="./images/icon-search.png" alt="" /></a>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle header__btn" href="#!"><img src="./images/icon-user-o.png" alt="" /></a>
+                                    <div class="h-dropdown__menu h-dropdown__menu--right"><a class="h-dropdown__item" href="#!"><i class="fa fa-user fa-fw mr-3"></i>Thông tin tài khoản</a><a class="h-dropdown__item" href="#!"><i class="fa fa-power-off fa-fw mr-3"></i>Thoát</a></div>
+                                </div>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header">
+                                            <div class="navbar__title py-4">Menu</div>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <form class="search">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                                    <div class="input-group-append">
+                                                        <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item menu-item-mega"><a class="menu-link" href="#!">Trang sức</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <div class="menu-mega">
+                                                        <ul class="menu menu-sub">
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phụ kiện cho nàng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Dây chuyền</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Nhẫn</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bông tai</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Lắc tay</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Lắc chân</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Set sản phẩm</a></li>
+                                                                    <li class="menu-item mt-auto"><a class="menu-link" href="#!">Chi tiết >>></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Quà tặng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Sản phẩm khắc tên</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Ngày kỷ niệm</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Ngày sinh nhật</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Ngày tình bạn</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Ngày tình nhân</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Ngày cha mẹ</a></li>
+                                                                    <li class="menu-item mt-auto"><a class="menu-link" href="#!">Chi tiết >>></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Bộ sưu tập</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập bông tai</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập nhẫn</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập vòng Pan</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập mùa xuân</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập mùa hạ</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập mùa thu</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Bộ sưu tập mùa đông</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">Chi tiết >>></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Phiên bản giới hạn</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                <ul class="menu menu-sub menu-sub-2">
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">“Love story”</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">“Yêu bản thân”</a></li>
+                                                                    <li class="menu-item"><a class="menu-link" href="#!">“Remember that”</a></li>
+                                                                    <li class="menu-item mt-auto"><a class="menu-link" href="#!">Chi tiết >>></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Khắc tên</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Submenu</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link" href="#!">Mẹ và bé</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!">Liên hệ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <section class="cat-intro"><img class="cat-intro__bg" src="./images/cat-intro-bg.jpg" alt="">
+                    <div class="container">
+                        <div class="cat-intro__body">
+                            <div class="cat-intro__title">Vòng cổ</div>
+                            <div class="cat-intro__content">
+                                <p>“Là con gái thì không thể thiếu bên mình những phụ kiện làm đẹp. Vì vậy, Foxy đã đem đến 1001 món trang sức cùng thiết kế đa dạng,thời thượng với hy vọng giúp các nàng trở nên xinh đẹp, tự tin và tỏa sáng”....</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-light py-20">
+                    <div class="container">
+                        <div class="pd-order">
+                            <div class="pd-order__label">Lựa chọn theo</div>
+                            <div class="pd-order__select">
+                                <select class="custom-select">
+                                    <option>Giá từ cao tới thấp</option>
+                                    <option>Giá từ thấp tới cao</option>
+                                    <option>Bán chạy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-2">
+                            <div class="grid-2__aside">
+                                <form class="filter">
+                                    <div class="filter__header">
+                                        <div class="filter__title">Bộ lọc</div>
+                                        <button class="filter__btn" type="reset">Loại bỏ</button>
+                                    </div>
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Chất liệu</div>
+                                        <div class="filter__list">
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc ta
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Ý (952)
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Mỹ Ký
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Mặt dây chuyền</div>
+                                        <div class="filter__list">
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc ta
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Ý (952)
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Mỹ Ký
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Cỡ mặt dây chuyền</div>
+                                        <div class="filter__list">
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc ta
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Ý (952)
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Mỹ Ký
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Cỡ sản phẩm</div>
+                                        <div class="filter__list">
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc ta
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Ý (952)
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Bạc Mỹ Ký
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form><a class="d-none d-md-block" href="#!"><img src="./images/banner-aside.jpg" alt=""></a>
+                            </div>
+                            <div class="grid-2__main">
+                                <div class="product-grid">
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                    <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                        <label class="product__favorite">
+                                            <input type="checkbox" /><span></span>
+                                        </label>
+                                        <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                        <div class="product__price">400.000 đ</div>
+                                        <div class="text-center mt-10">
+                                            <div class="product__label">Phiên bản giới hạn</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="mt-20">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled"><a class="page-link" href="#!"><i class="fa fa-angle-left mr-2"></i>Prev</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">Next<i class="fa fa-angle-right ml-2"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <section class="section">
+                                    <h2 class="section__title">Có thể bạn sẽ thích</h2>
+                                    <div class="product-grid">
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-1.png" alt="" /></a>
+                                            <label class="product__favorite">
+                                                <input type="checkbox" /><span></span>
+                                            </label>
+                                            <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                            <div class="product__price">400.000 đ</div>
+                                            <div class="text-center mt-10">
+                                                <div class="product__label">Phiên bản giới hạn</div>
+                                            </div>
+                                        </div>
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-2.png" alt="" /></a>
+                                            <label class="product__favorite">
+                                                <input type="checkbox" /><span></span>
+                                            </label>
+                                            <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                            <div class="product__price">400.000 đ</div>
+                                            <div class="text-center mt-10">
+                                                <div class="product__label">Phiên bản giới hạn</div>
+                                            </div>
+                                        </div>
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-3.png" alt="" /></a>
+                                            <label class="product__favorite">
+                                                <input type="checkbox" /><span></span>
+                                            </label>
+                                            <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                            <div class="product__price">400.000 đ</div>
+                                            <div class="text-center mt-10">
+                                                <div class="product__label">Phiên bản giới hạn</div>
+                                            </div>
+                                        </div>
+                                        <div class="product"><a class="product__frame" href="#!"><img src="./images/product-4.png" alt="" /></a>
+                                            <label class="product__favorite">
+                                                <input type="checkbox" /><span></span>
+                                            </label>
+                                            <h3 class="product__title"><a href="#!">Lắc tay vòng cỏ nhỏ</a></h3>
+                                            <div class="product__price">400.000 đ</div>
+                                            <div class="text-center mt-10">
+                                                <div class="product__label">Phiên bản giới hạn</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container"><a class="footer__logo" href="./index.html"><img src="./images/logo-footer.png" alt="" /></a>
+                    <div class="footer__grid">
+                        <div class="footer__col">
+                            <div class="footer__title">TRỢ GIÚP</div>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Đơn vị vận chuyển</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Phương thức thanh toán</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Chương trình khuyễn mãi</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Kích cỡ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">LIÊN HỆ</div>
+                            <ul class="f-contact">
+                                <li class="f-contact__item"><i class="fa fa-fw fa-phone mr-2"></i><a href="tel:0877.346.443">0877.346.443</a></li>
+                                <li class="f-contact__item">Cơ sở 1 : Số 1 Ngõ 171/191 Hoàng Hoa Thám, BĐ, HN</li>
+                                <li class="f-contact__item">Cơ sở 2 : Số 24 Hoàng Quốc Việt, Cầu Giấy, HN</li>
+                                <li class="f-contact__item">Email : <a href="mailto:shopfoxy.jw@gmail.com">shopfoxy.jw@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__title">THEO DÕI</div>
+                            <ul class="f-menu">
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Facebook</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Shopee</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Intagram</a></li>
+                                <li class="f-menu__item"><a class="f-menu__link" href="#!">Tiktok</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <form class="f-form" action="#!">
+                                <h3 class="f-form__title">Đặt hàng nhanh</h3>
+                                <div class="input-group">
+                                    <input class="form-control" type="email" placeholder="Địa chỉ Email" />
+                                    <div class="input-group-append">
+                                        <button class="input-group-text">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">&copy; copyright: 2020 Foxy Jewellery<br />Site by Foxy Jewellery</div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop js-scroll-to" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>
